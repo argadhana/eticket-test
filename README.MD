@@ -88,7 +88,7 @@ Sistem ini adalah simulasi **E-Ticketing Transportasi Publik** yang mendukung:
 
 ---
 
-## ⚙️ API Endpoint (Swagger)
+## ⚙️ API Endpoint (Postman)
 
 - `POST /login` → login user (JWT).
 - `POST /stations` → tambah stasiun.

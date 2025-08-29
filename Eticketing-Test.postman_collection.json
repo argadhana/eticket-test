@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "21a9f19c-be67-4e4c-87ed-763203bd923c",
+		"name": "Eticketing-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8941316",
+		"_collection_link": "https://backendapi-kasirapp.postman.co/workspace/SyntaxCorp-Siakad~4f94029c-4f0f-44f1-b5b7-a867b5b59a2b/collection/8941316-21a9f19c-be67-4e4c-87ed-763203bd923c?action=share&source=collection_link&creator=8941316"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9988/api/v1/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Station",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjE2MzE3MzYsInJvbGUiOiJhZG1pbiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4ifQ.wa0evLcR4Fk07SvLsWZaVFLrrUXyHIT2-CI2fOmJTVc"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Station A\",\n    \"location\" : \"Jakarta Pusat\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9988/api/v1/stations"
+			},
+			"response": []
+		}
+	]
+}
